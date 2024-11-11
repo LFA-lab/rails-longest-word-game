@@ -1,0 +1,14 @@
+<div class="container mt-5 text-center">
+  <h1 class="display-4 mb-4">Game Result</h1>
+
+  <!-- Affichage du message de validation -->
+  <div class="alert <%= @score > 0 ? 'alert-success' : 'alert-danger' %> fs-5" role="alert">
+    <%= @message %>
+  </div>
+
+  <!-- Affichage du score -->
+  <p class="lead fs-4">Your score: <strong><%= @score %></strong></p>
+
+  <!-- Bouton pour rejouer -->
+  <%= link_to "Play Again", new_path, class: "btn btn-secondary btn-lg mt-4" %>
+</div>

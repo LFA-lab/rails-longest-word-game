@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ .letter-grid span {
+  font-size: 2rem;
+  padding: 1rem;
+}
